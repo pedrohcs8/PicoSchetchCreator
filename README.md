@@ -4,7 +4,7 @@ This is a simple script aimed for making your life easier when creating new proj
 
 # Requirements
 
-[bear](https://github.com/rizsotto/Bear)
+[Bear](https://github.com/rizsotto/Bear) - For creating compile_commands.json for clangd lsp completion
 
 Pico C SDK Installer (Debian Only for other distros install manually)
 
