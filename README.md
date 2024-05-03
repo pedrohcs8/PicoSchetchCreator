@@ -9,10 +9,10 @@ This is a simple script aimed for making your life easier when creating new proj
 Pico C SDK Installer (Debian Only for other distros install manually)
 
 Install Requirements:
-sudo apt-get install jq minicom make cmake gdb-multiarch automake autoconf libtool libftdi-dev libusb-1.0-0-dev pkg-config clang-format -y
+`sudo apt-get install jq minicom make cmake gdb-multiarch automake autoconf libtool libftdi-dev libusb-1.0-0-dev pkg-config clang-format -y`
 
 Use the installer:
-wget https://raw.githubusercontent.com/raspberrypi/pico-setup/master/pico_setup.sh
+`wget https://raw.githubusercontent.com/raspberrypi/pico-setup/master/pico_setup.sh`
 
 # Instalation:
 
