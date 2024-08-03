@@ -31,14 +31,29 @@ cmakeFileScript = [
   'add_compile_definitions(PICO_STDIO_USB_CONNECT_WAIT_TIMEOUT_MS=5000)',
 ]
 
-def createCMakeFile(projectDir, isI2C):
+def createCMakeFile(projectDir, isI2C, isPWM, isADC, isGPIO):
   cmakeFile = open(projectDir + '/CMakeLists.txt', 'x')
 
   convArray = numpy.array(cmakeFileScript)
   convArray[6] = 'project(' + projectDir + ' C CXX ASM)\n'
 
+  topLines = 24;
+
   if (isI2C):
+    topLines = topLines + 1
     convArray = numpy.insert(convArray, 25, '    hardware_i2c\n')
+
+  if (isPWM):
+    topLines = topLines + 1
+    convArray = numpy.insert(convArray, 25, '    hardware_pwm\n')
+
+  if (isADC):
+    topLines = topLines + 1
+    convArray = numpy.insert(convArray, 25, '    hardware_adc\n')
+
+  if (isGPIO):
+    topLines = topLines + 1
+    convArray = numpy.insert(convArray, 25, '    hardware_gpio\n')
 
   cmakeFile.writelines(convArray)
 
