@@ -18,8 +18,7 @@ Simply clone the repo or download standalone-creator.py
 
 Simply run the standalone-creator.py file, optionally go to src and run main.py
 
-<code>
-python3 standalone-creator.py
+<code>python3 standalone-creator.py
 OR
 python3 /src/main.py
 </code>
