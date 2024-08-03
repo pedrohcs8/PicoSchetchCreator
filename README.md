@@ -18,9 +18,8 @@ Simply clone the repo or download standalone-creator.py
 
 Simply run the standalone-creator.py file, optionally go to src and run main.py
 
-<code>python3 standalone-creator.py
+<code>python3 standalone-creator.py</code>
 OR
-python3 /src/main.py
-</code>
+<code>python3 src/main.py</code>
 
 This will automatically create the project in the same foder it was runned, creating a main script, a compile script and a script for serial monitoring with minicom on /dev/ttyACM0, all being sh, additionaly it will do the first compiling, giving you the compile_commands.json file, important for autocompletion with lsp's
