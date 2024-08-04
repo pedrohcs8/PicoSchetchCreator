@@ -3,6 +3,8 @@ createScript = [
   'cd build\n',
   'cmake ..\n',
   'bear -- make\n',
+  'rm -rf ../compile_commands.json\n'
+  'cp compile_commands.json ..\n'
   '$shell\n'
 ]
 
