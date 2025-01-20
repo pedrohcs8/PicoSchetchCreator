@@ -20,6 +20,7 @@ createCompileScript(projectDir)
 createSerialMonitorScript(projectDir)
 
 createCMakeFile(projectDir, useI2C, usePWM, useADC, useGPIO)
+
 createMainFile(projectDir, useI2C, usePWM, useADC, useGPIO)
 
 os.mkdir(projectDir + '/build')
