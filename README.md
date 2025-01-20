@@ -5,7 +5,9 @@ A simple program for creating projects for the Raspberry Pi Pico, focusing on ls
 **Requirements:**
 
 [bear](https://github.com/rizsotto/Bear)
+
 Python 3.10
+
 minicom (optional)
 
 **Install**
